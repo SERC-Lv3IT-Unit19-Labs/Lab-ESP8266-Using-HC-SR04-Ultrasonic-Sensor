@@ -35,7 +35,7 @@ Build and test a circuit using the sensor.
 
     <br />
 
-    ![breadboard diagram](assets/hc-sr04-sensor-circuit-diagram_bb.svg)
+    ![breadboard diagram](assets/hc-sr04-sensor-circuit-diagram_bb.png)
 
     #### Default Pin Wiring
 
