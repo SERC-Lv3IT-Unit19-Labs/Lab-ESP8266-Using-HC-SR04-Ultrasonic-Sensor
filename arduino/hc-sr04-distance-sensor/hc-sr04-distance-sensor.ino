@@ -1,5 +1,8 @@
 /*
     Arduino sketch for measuring distance using a HC-SR04 ultrasonic distance sensor. 
+    Sketch includes
+       - temperature compensation
+       - warning LED
 */
 
 /** Tempeature Sensor settings **/
@@ -50,8 +53,10 @@ void loop() {
     // Reads the echoPin, returns the sound wave travel time in microseconds
     duration = pulseIn(echoPin, HIGH);
 
+
+    // Speed of sound m/s = 331.4 + (0.606 * Temp)
     // Calculating the distance using speed of sound estimate
-    distance = duration*0.034/2;
+    distance = duration*(331.4+(0.606*celcius))/20000;
 
     // Prints the temperature and distance on the Serial Monitor
     Serial.print("Temperature: ");
