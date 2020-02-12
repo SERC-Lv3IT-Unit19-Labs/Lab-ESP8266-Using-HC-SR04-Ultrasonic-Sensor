@@ -31,7 +31,7 @@ Build and test a circuit using the sensor.
 
 1. Wire up the components as shown in the diagrams.
 
-    ![circuit diagram](assets/hc-sr04-sensor-circuit-diagram_schem.svg)
+    ![circuit diagram](assets/hc-sr04-sensor-circuit-diagram_schem.png)
 
     <br />
 
