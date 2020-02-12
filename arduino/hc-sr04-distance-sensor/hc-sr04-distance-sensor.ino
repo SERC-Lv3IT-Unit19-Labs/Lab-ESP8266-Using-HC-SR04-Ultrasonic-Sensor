@@ -22,6 +22,7 @@ float celcius=0;
 // define pin numbers
 const int trigPin = 4;  //D2
 const int echoPin = 5;  //D1
+const int LEDPin = 2;   //D4
 
 // define variables
 long duration;
@@ -30,7 +31,10 @@ int distance;
 void setup() {
     pinMode(trigPin, OUTPUT);   // Sets the trigPin as an Output
     pinMode(echoPin, INPUT);    // Sets the echoPin as an Input
+    pinMode(LEDPin, OUTPUT);    // Set LEDPin as output
     Serial.begin(115200);       // Starts the serial communication
+
+    // digitalWrite(LEDPin, LOW); // Pin 2 starts set to high. Need to force low
 }
 
 void loop() {
@@ -65,6 +69,21 @@ void loop() {
     Serial.print("Distance: ");
     Serial.print(distance);
     Serial.println(" cm");
-    delay(2000);
-}
 
+    if (distance < 5) {
+        for (int i=0; i<4; ++i) {   // loop 4 times
+            digitalWrite(LEDPin, HIGH);
+            delay(250);
+            digitalWrite(LEDPin, LOW);
+            delay(250);
+        }
+    }
+    else if (distance < 10) {
+        digitalWrite(LEDPin, HIGH);
+        delay(2000);
+    }
+    else {
+        digitalWrite(LEDPin, LOW);
+        delay(2000);
+    }
+}
