@@ -1,9 +1,9 @@
 /*
-    Arduino sketch for measuring distance using a HC-SR04 ultrasonic distance sensor. 
-    Sketch includes
-       - temperature compensation
-       - warning LED
-*/
+ * Arduino sketch for measuring distance using a HC-SR04 ultrasonic distance sensor. 
+ * Sketch includes
+ *    - temperature compensation
+ *    - warning LED
+ */
 
 /** Tempeature Sensor settings **/
 // Include libraries needed for DS18B20 temperature sensor
