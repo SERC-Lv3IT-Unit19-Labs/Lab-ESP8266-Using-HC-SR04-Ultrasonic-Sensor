@@ -49,7 +49,9 @@ Build and test a circuit using the sensor.
     ![pin diagram](assets/Wemos-D1-Mini.png)
 
 
-2. Open the [hc-sr04-distance-sensor](arduino/hc-sr04-distance-sensor/hc-sr04-distance-sensor.ino) sketch and run it.
+2. If using Arduino IDE: Open the [hc-sr04-distance-sensor](arduino/hc-sr04-distance-sensor/hc-sr04-distance-sensor.ino) sketch and run it.
+
+   If using MicroPython: Import the contents of the micropython folder onto the D1 mini. Run the [`distance.py`](micropython/distance.py) script.
 
 3. Open the serial monitor and check that the sensor is working correctly. ![serial monitor button](assets/serial-monitor-button.png)
 
