@@ -53,7 +53,7 @@ Build and test a circuit using the sensor.
 
    If using MicroPython: Import the contents of the micropython folder onto the D1 mini. Run the [`distance.py`](micropython/distance.py) script.
 
-3. Open the serial monitor and check that the sensor is working correctly. ![serial monitor button](assets/serial-monitor-button.png)
+3. Open the serial monitor and check that the sensor is working correctly.
 
 ## Exercise 3
 
